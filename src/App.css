@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+  background-color: rgb(177, 189, 189);
+}
+* {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(73, 79, 82);
+  color: white;
+
+  float: left;
+  width: 15%;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  border-color: black;
+
+  border-style: none;
+  margin-top: 0;
+}
+
+.hamburgericon {
+  text-align: left;
+  font-size: 25px;
+  color: white;
+  float: left;
+  line-height: 80px;
+  cursor: pointer;
+}
+#check {
+  display: block;
+}
+#check ~ ul {
+  display: block;
+}
+#check ~ .hamburgericon {
+  width: 100%;
+}
+
+#check:checked ~ .hamburgericon {
+  width: 30%;
+}
+
+#check:checked ~ ul {
+  display: none;
+}
+.nav-link {
+  width: 50%;
+  display: block;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.main-nav {
+  display: block;
+  text-align: left;
+  padding: 20px;
+}
+.main-nav-active {
+  color: rgb(231, 172, 172) !important;
+}
+.main-nav:hover:not(.active) {
+  color: rgb(142, 224, 104);
+}
+.bubble {
+  margin-left: 250px;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+}
+.button {
+  margin-left: 150px;
+  margin-right: 50px;
+  margin-top: 30px;
+  font-size: 20px;
+  max-height: 45px;
+  min-width: 70px;
+}
+.incrdecr {
+  margin-top: 30px;
+  font-size: 20px;
+  max-height: 45px;
+  min-width: 70px;
+}
+.number {
+  margin-top: 10px;
+}
